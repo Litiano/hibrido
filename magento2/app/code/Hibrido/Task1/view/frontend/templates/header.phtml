@@ -1,0 +1,8 @@
+<?php
+/** @var Hibrido\Task1\Block\Frontend\Header $block */
+
+if ($block->canShow()):
+    foreach ($block->getPageStores() as $store): ?>
+        <link rel="alternate" hreflang="<?= $block->getIsoStoreLocale($store) ?>" href="<?= $block->getPageUrl($store) ?>"/>
+    <?php endforeach;
+endif; ?>

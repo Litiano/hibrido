@@ -1,0 +1,8 @@
+<?php /** @var Hibrido\Task2\Block\Frontend\ButtonColor $block */ ?>
+<style>
+    <?php if ($buttonColor = $block->getButtonColor()): ?>
+    button {
+        background-color: #<?= $buttonColor ?>!important;
+    }
+    <? endif; ?>
+</style>
